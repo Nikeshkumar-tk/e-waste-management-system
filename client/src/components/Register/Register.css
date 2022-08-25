@@ -1,0 +1,31 @@
+.register{
+    height: 100vh;
+    width: 100%;
+    background-color: #555;
+}
+.register-inner{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.input-text{
+    margin-bottom: 10px;
+    border-width: 0px;
+    text-align: center;
+}
+.register-btn{
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border-width: 0px;
+    font-size: 20px;
+    background-color: rgba(108, 209, 7, 0.838);
+    color: #fff;
+    cursor: pointer;
+}
+::placeholder{
+color: #555;
+}
