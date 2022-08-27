@@ -27,16 +27,16 @@ try{
 
 }
 })
-router.post("/login",async(req,res)=>{
-    try{
-        const User=await user.findOne({username:req.body.username})
-        !User&&res.status(400).json("Wrong")
-        const validate=await bcrypt.compare(req.body.password,User.password)
-        !validate&&res.status(400).json("Wrong")
-        res.status(200).json(User)
+// router.post("/login",async(req,res)=>{
+//     try{
+//         const User=await user.findOne({username:req.body.username})
+//         !User&&res.status(400).json("Wrong")
+//         const validate=await bcrypt.compare(req.body.password,User.password)
+//         !validate&&res.status(400).json("Wrong")
+//         res.status(200).json(User)
 
-    }catch{
+//     }catch{
 
-    }
-})
+//     }
+// })
 module.exports=router

@@ -55,5 +55,53 @@ text-align: center;
 }
 .pay-meth-hed{
     position: relative;
-    bottom: 50px;
+    top: 30px;
+    
+}
+.radio-wrap{
+    top:50px ;
+    position: relative;
+}
+.payment-btn{
+    height: 35px;
+    width: 130px;
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: green;
+    border-width: 0px;
+}
+.amt-wrap{
+    display: flex;
+    align-items: center;
+}
+.amt{
+    position: relative;
+    margin-left: 10px;
+    top: 6px;
+}
+.card-num{
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    position: relative;
+    left: 240px;
+    top: 5px;
+}
+.card-enter{
+    position: relative;
+    top: 30px;
+}
+.confirm-btn{
+    position: relative;
+    top: 100px;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: green;
+    color: #fff;
+    left: 450px;
+    top: 150px;
+    cursor: pointer;
 }

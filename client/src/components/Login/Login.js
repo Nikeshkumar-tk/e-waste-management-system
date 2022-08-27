@@ -16,13 +16,18 @@ const res=await axios.post("/auth/login",
   username:userRef.current.value,
   password:passwordRef.current.value
 })
-dispatch({type:"LOGIN_SUCESS",payload:res.data})
-console.log(res.data)
+dispatch({type:"LOGIN_SUCCESS",payload:res.data})
+console.log(res.data.username)
+// setUser(res.data)
+res&&window.location.replace('/')
+console.log(user)
+
 }catch(err){
   console.log(err)
   dispatch({type:"LOGIN_FAILURE"})
 }
   }
+  console.log(isFetching)
   return (
    
     <div className="main">

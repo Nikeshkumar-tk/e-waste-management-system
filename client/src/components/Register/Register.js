@@ -10,11 +10,11 @@ const Register = () => {
     const [landmark,setLanmark]=useState('')
     const [district,setDistrict]=useState('')
     const [password,setPassword]=useState('')
-    const handleSubmit=(e)=>{
+    const handleSubmit=async(e)=>{
 e.preventDefault()
 try{
 
-    const res=axios.post('/auth/register',{
+    const res=await axios.post('/auth/register',{
         username:name,
         email:email,
         phoneno:phoneno,
@@ -24,6 +24,7 @@ try{
         password:password
     })
     console.log(res)
+    res&&window.location.replace('/login')
 }catch(err){
     console.log(err)
 }

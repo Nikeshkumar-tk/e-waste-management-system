@@ -3,7 +3,6 @@ const userSchema=new mongoose.Schema({
     username:{
         type:String,
         required:true,
-        unique:true,
     },
     email:{
         type:String,
@@ -37,6 +36,10 @@ const userSchema=new mongoose.Schema({
     homeaddress:{
         type:String,
         required:true
+    },
+    userid:{
+        type:String,
+        unique:true
     }
     
 },

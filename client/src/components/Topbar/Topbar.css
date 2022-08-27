@@ -1,0 +1,30 @@
+.topbar-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar-wrap h4{
+    position: relative;
+    left: 100px;
+    cursor: pointer;
+}
+.topbar-wrap ul{
+    position: relative;
+    margin-right: 300px;
+    display: flex;
+    align-items: center;
+    /* background-color: green; */
+    width: 800px;
+    justify-content: space-between;
+}
+.topbar-wrap ul li{
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 8px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+    color: inherit;
+}

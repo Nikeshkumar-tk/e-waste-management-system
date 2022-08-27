@@ -3,7 +3,6 @@ const requestSchema=new mongoose.Schema({
     username:{
         type:String,
         required:true,
-        unique:true,
     },
     weight:{
         type:Number,
@@ -28,6 +27,10 @@ const requestSchema=new mongoose.Schema({
     picked:{
         type:Boolean,
         required:true
+    },
+    userid:{
+        type:String,
+        unique:true
     }
     
    

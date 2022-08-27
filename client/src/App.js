@@ -9,22 +9,26 @@ import {BrowserRouter as Router,
   Link} from "react-router-dom";
 import Request from './components/Request/Request';
 import Dashboard from './components/UserDashboard/Dashboard';
+import { createContext, useContext, useState } from 'react';
+// export const userContext=createContext()
+import { Context } from './context/Context';
+import Topbar from './components/Topbar/Topbar';
 
 function App() {
+  const {user}=useContext(Context)
   return (
     <div className="App">
-      {/* <Login /> */}
-      {/* <Register /> */}
-     
+    
+     {/* <userContext.Provider value={user}> */}
+
+
       <Router>
-      
+      <Topbar />
     <Routes>
-      {/* <Route path='/logout' element={<Login />}/> */}
-      <Route exact path='/' element={<Home />} />
+      <Route exact path='/' element={user?<Home />:<Login />} />
       
-   
      <Route path='/register' element={<Register/>}/>
-     <Route path='/request' element={<Request />} />
+     <Route path='/request' element={<Request/>} />
      <Route path='/login' element={<Login />} />
      <Route path='/dashboard' element={<Dashboard />} />
      
@@ -34,6 +38,7 @@ function App() {
     </Routes>
       
       </Router>
+     {/* </userContext.Provider> */}
     </div>
   );
 }
