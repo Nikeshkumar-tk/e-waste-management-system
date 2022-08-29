@@ -14,7 +14,11 @@ try{
         location:req.body.location,
         weight:req.body.weight,
         payment:req.body.payment,
-        picked:req.body.picked
+        picked:req.body.picked,
+        userid:req.body.userid,
+        amount:req.body.amount,
+        email:req.body.email,
+        district:req.body.district
         
     })
     const Request=await newRequest.save()
@@ -39,4 +43,44 @@ try{
 
 //     }
 // })
+router.put("/pick/:id",async(req,res)=>{
+    try{
+
+        let updatedRequest=await request.findByIdAndUpdate(req.params.id,{
+            "$set":{"picked":"true"}
+        })
+        res.status(200).json(updatedRequest)
+    }catch(err){
+        console.log(err)
+    }
+
+}
+)
+router.get("/:userid",async(req,res)=>{
+try{
+let result=await request.find({"userid":req.params.userid,"picked":true})
+res.status(200).json(result)
+}catch(err){
+console.log(err)
+}
+
+})
+router.get("/active/:userid",async(req,res)=>{
+    try{
+    let result=await request.find({"userid":req.params.userid,"picked":false})
+    res.status(200).json(result)
+    }catch(err){
+    console.log(err)
+    }
+    
+    })
+    router.get("/active/details/:id",async(req,res)=>{
+        try{
+        let result=await request.findById(req.params.id)
+        res.status(200).json(result)
+        }catch(err){
+        console.log(err)
+        }
+        
+        })
 module.exports=router

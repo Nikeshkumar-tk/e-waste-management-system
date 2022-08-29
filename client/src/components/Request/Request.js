@@ -29,9 +29,13 @@ const Request = () => {
       payment:payment,
       picked:false,
       location:user.landmark,
-      userid:user.userid
+      userid:user.userid,
+      amount:amount,
+      email:user.email,
+      district:user.district
     })
     console.log(res)
+    res&&window.location.replace(`/dashboard/requestdetails/${res.data._id}`)
   }catch(err){
     console.log(err)
   }

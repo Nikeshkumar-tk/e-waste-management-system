@@ -1,7 +1,7 @@
 .request-main{
     height: 100vh;
     width: 100%;
-    background-color: #555;
+    /* background-color: #555; */
     position: relative;
 }
 .request-inner{
@@ -19,6 +19,7 @@
    bottom: 8px;
    width: 200px;
    border-radius: 5px;
+   border-width: 1px;
 
 }
 .request-btn{
@@ -46,9 +47,9 @@
    position:relative;
    bottom: 8px;
    width: 200px;
-   left: 14px;
+   left: 18px;
    border-radius: 5px;
-   border-width: 0px;
+   border-width: 1px;
 }
 .input-text2::placeholder{
 text-align: center;

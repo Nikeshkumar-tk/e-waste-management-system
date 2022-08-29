@@ -3,6 +3,8 @@ const requestSchema=new mongoose.Schema({
     username:{
         type:String,
         required:true,
+        unique:false
+       
     },
     weight:{
         type:Number,
@@ -30,7 +32,17 @@ const requestSchema=new mongoose.Schema({
     },
     userid:{
         type:String,
-        unique:true
+        
+    },
+    amount:{
+        type:String,
+        required:true
+    },
+    email:{
+        type:String
+    },
+    district:{
+        type:String
     }
     
    

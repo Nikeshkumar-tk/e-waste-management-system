@@ -52,4 +52,8 @@ router.get('/requests',async(req,res)=>{
 const Requests=await requests.find({"picked":false})
 res.status(200).json(Requests)
 })
+router.get('/requests/completed',async(req,res)=>{
+    const Requests=await requests.find({"picked":true})
+    res.status(200).json(Requests)
+    })
 module.exports=router

@@ -13,9 +13,18 @@ import { createContext, useContext, useState } from 'react';
 // export const userContext=createContext()
 import { Context } from './context/Context';
 import Topbar from './components/Topbar/Topbar';
+import Admin from './components/Admin/Admin';
+import Adminlogin from './components/Adminlogin/Adminlogin';
+import SinglePadeDetails from './components/singlePageRequestDetails/SinglePadeDetails';
+import UserDetails from './components/UserDetailsAdminSide/UserDetails';
 
 function App() {
   const {user}=useContext(Context)
+  const [adminMode,setAdminMode]=useState(false)
+  const [adminUser,setAdminUser]=useState('')
+  
+console.log(adminUser)
+  
   return (
     <div className="App">
     
@@ -23,7 +32,10 @@ function App() {
 
 
       <Router>
-      <Topbar />
+        {
+
+    !adminMode&&  <Topbar setAdminMode={setAdminMode}/>
+        }
     <Routes>
       <Route exact path='/' element={user?<Home />:<Login />} />
       
@@ -31,7 +43,11 @@ function App() {
      <Route path='/request' element={<Request/>} />
      <Route path='/login' element={<Login />} />
      <Route path='/dashboard' element={<Dashboard />} />
-     
+     <Route path='/admin/dashboard' element={adminUser!=null?<Admin setAdminMode={setAdminMode} adminUser={adminUser}/>:<Adminlogin />}/>
+     <Route path='/admin/dashboard/userdetails/:id' element={adminUser!=null?<UserDetails setAdminMode={setAdminMode} adminUser={adminUser}/>:<Adminlogin />}/>
+
+     <Route path='/admin' element={<Adminlogin setAdminMode={setAdminMode} setAdminUser={setAdminUser} />}/>
+     <Route path='/dashboard/requestdetails/:id' element={<SinglePadeDetails />}/>
       
      
         

@@ -2,26 +2,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #000;
+    color: wheat;
+    font-family: cursive;
+    width: 100%;
+    height: 80px;
+    position: sticky;
 }
 .topbar-wrap h4{
     position: relative;
     left: 100px;
     cursor: pointer;
+    font-size: 20px;
 }
 .topbar-wrap ul{
     position: relative;
-    margin-right: 300px;
+    margin-right: 200px;
     display: flex;
     align-items: center;
     /* background-color: green; */
-    width: 800px;
+    width: 1000px;
     justify-content: space-between;
+    height: 100%;
+    /* background-color: green; */
 }
 .topbar-wrap ul li{
     margin-bottom: 10px;
     position: relative;
     bottom: 8px;
-    margin-right: 40px;
+    margin-right: 0px;
     cursor: pointer;
 }
 .link{

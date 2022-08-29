@@ -1,0 +1,53 @@
+.admin-login-wrap{
+
+    height: 100vh;
+
+}
+.form-wrap-inner{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* justify-content:; */
+    height: 300px;
+    width: 100%;
+    align-items: center;
+}
+.form-wrap-inner input{
+width: 230px;
+border-width: 2px;
+border-style: solid;
+height: 45px;
+border-radius: 8px;
+margin: 10px;
+text-align: center;
+
+}
+.form-wrap-inner input::placeholder{
+    text-align: center;
+}
+.form-wrap-inner button{
+    width: 150px;
+    height: 39px;
+    margin-top: 30px;
+    border-width: 0px;
+    background-color: green;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-wrap-inner button:hover{
+
+        color: #000;
+        background-color: chartreuse;
+}
+.form-wrap-inner h2{
+    font-family: cursive;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 50px;
+    font-size: 50px;
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Chakra+Petch:wght@300&family=Finlandica:ital,wght@1,400;1,500;1,600;1,700&family=Mulish:wght@200&family=Raleway:wght@100&family=Roboto:ital,wght@1,100&family=Rubik+Maze&family=Shadows+Into+Light&family=Ubuntu:wght@300&display=swap');
+
+.admin-main{
+    /* background-color: green; */
+    /* height: 100vh; */
+}
+.admin-nav{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    background-color: #000;
+    height: 70px;
+    color: antiquewhite;
+}
+.admin-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 90px;
+    
+    /* margin-left: 50px; */
+    }
+.admin-nav ul li {
+    /* margin-right: 10px; */
+    margin-left: 20p;
+    font-size: 20px;
+    cursor: pointer;
+    position: inherit;
+    bottom: 4px;
+}
+.li-1{
+    margin-right: 10px;
+    position: relative;
+    right: 100px;
+}
+.li-3{
+    position: inherit;
+    left: 110px;
+}
+.li-2{
+    position: relative;
+    left: 25px;
+}
+.admin-nav h4{
+position: relative;
+top: 10px;
+margin-left: 40px;
+font-size: 30px;
+font-family: cursive;
+}
+.detail-section{
+    /* height: 100vh; */
+    background-color: #555;
+}
+.detail-card{
+    display: flex;
+    
+    height: 70px;
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+    padding-top: 10px;
+    /* padding-left: 20px; */
+    justify-content: space-evenly;
+    border-color: #555;
+    border-bottom: 1px;
+    border-width: 1px;
+    border-style: solid;
+    font-family: Mulish;
+    
+}
+.status-wrap{
+display: flex;
+padding-top: 11px;
+}
+.status-wrap h4{
+    margin-right: 500px;
+}
+.status-wrap button{
+    height: 40px;
+    width: 130px;
+    border-radius: 5px;
+    background-color: green;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.admin-nav h5{
+    margin-right: 10px;
+    position: inherit;
+    right: 106px;
+
+}
+.link{
+    text-decoration: none;
+}
