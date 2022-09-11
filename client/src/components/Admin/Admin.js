@@ -55,14 +55,14 @@ console.log(res.data)
         <div className='admin-nav'>
             <h4>PickUp</h4>
             <ul>
-                <li className='li-1'>Users</li>
+                
                 <li className='li-2' onClick={fetchData}>Requests</li>
                 <li className='li-3' onClick={pickedDetails}>Completed Requests</li>
 
 
             </ul>
             <h5>Admin : {adminUser.username}</h5>
-        </div>
+        </div><hr></hr>
         <section className='detail-section'>
             {
                 data.map((res)=>{
@@ -75,7 +75,7 @@ return(
 
 
 <div className='detail-card'>
-    <div>
+    <div className='uwp-details'>
 
     <h4>Username:{username}</h4>
     <h4>Weight: {weight} kg</h4>
@@ -88,7 +88,7 @@ return(
     </div>
 
 
-</div>
+</div><hr className='detail-hr'/>
 </Link>
                 )})
             }

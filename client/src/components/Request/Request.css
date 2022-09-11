@@ -1,108 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Poppins:wght@200&display=swap');
+
+
 .request-main{
     height: 100vh;
-    width: 100%;
-    /* background-color: #555; */
-    position: relative;
-}
-.request-inner{
+    background-color:azure;
    
-    
-    position: absolute;
-    left: 200px;
-    top: 200px;
-    
 }
-.input-text{
-   margin-left: 10px;
-   height: 40px;
-   position:relative;
-   bottom: 8px;
-   width: 200px;
-   border-radius: 5px;
-   border-width: 1px;
+/* heading */
 
-}
-.request-btn{
-    height: 50px;
-    border-radius: 10px;
-    font-size: 20px;
-    color: #fff;
-    background-color: green;
-    cursor: pointer;
-    border-width: 0px;
-}
 .request-main h3{
     position: absolute;
-    left: 560px;
-    margin-top: 30px;
-    font-family: cursive;
-
+    left: 600px;
+    font-family: Poppins;
 }
-.pair{
+.request-inner{
+position: absolute;
+/* background-color: green; */
+height: 100vh;
+width: 100%;
+top: 180px;
+display: flex;
+/* padding: 60px; */
+padding-left: 200px;
+justify-content: space-between;
+padding-right: 50px;
+}
+/* form styles */
+.request-frm{
     display: flex;
-}
-.input-text2{
-    margin-left: 10px;
-   height: 40px;
-   position:relative;
-   bottom: 8px;
-   width: 200px;
-   left: 18px;
-   border-radius: 5px;
-   border-width: 1px;
-}
-.input-text2::placeholder{
-text-align: center;
-}
-.pay-meth-hed{
-    position: relative;
-    top: 30px;
-    
-}
-.radio-wrap{
-    top:50px ;
-    position: relative;
-}
-.payment-btn{
-    height: 35px;
-    width: 130px;
-    position: relative;
-    top: 10px;
-    border-radius: 5px;
-    color: #fff;
-    background-color: green;
-    border-width: 0px;
-}
-.amt-wrap{
-    display: flex;
+    flex-direction: column;
     align-items: center;
+    
+    /* background-color: red; */
 }
-.amt{
-    position: relative;
-    margin-left: 10px;
-    top: 6px;
-}
-.card-num{
-    height: 30px;
-    width: 250px;
-    border-radius: 5px;
-    position: relative;
-    left: 240px;
-    top: 5px;
-}
-.card-enter{
-    position: relative;
-    top: 30px;
-}
-.confirm-btn{
-    position: relative;
-    top: 100px;
-    height: 40px;
+.request-frm input{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 35px;
     width: 200px;
+    border-width: 1px;
+    border-radius: 0px;
+   
+}
+.payment{
+    margin-right: 400px;
+ /* background-color: green; */
+ width: 500px;
+ 
+}
+/* see payment  */
+.request-inner button{
+    height: 35px;
     border-radius: 5px;
+    border-width: 0px;
     background-color: green;
-    color: #fff;
-    left: 450px;
-    top: 150px;
+    margin-top: 80px;
     cursor: pointer;
+    color: aliceblue;
 }

@@ -37,7 +37,7 @@ console.log(adminUser)
     !adminMode&&  <Topbar setAdminMode={setAdminMode}/>
         }
     <Routes>
-      <Route exact path='/' element={user?<Home />:<Login />} />
+      <Route exact path='/' element={<Home />} />
       
      <Route path='/register' element={<Register/>}/>
      <Route path='/request' element={<Request/>} />

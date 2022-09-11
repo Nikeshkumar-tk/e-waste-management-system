@@ -9,12 +9,14 @@ const Request = () => {
  const [payment,setPayment]=useState('')
  const [weight,setWeight]=useState()
  const [amount,setAmount]=useState()
+ const [paymentmode,setPaymentMode]=useState(false)
  
  const findAmount=(e)=>{
   e.preventDefault()
   let am=weight*50
   setAmount(am)
   console.log(user)
+  setPaymentMode(true)
  }
  const handleSubmit=async(e)=>{
   e.preventDefault()
@@ -44,19 +46,19 @@ const Request = () => {
     
   return (
     <div className='request-main'>
-      <h3>Make your new request for pick up</h3>
-        <div className='request-inner'>
-            <form >
+   <u>   <h3>Make your new request for pick up</h3></u>
+       <div className='request-inner'>
+        <form className='request-frm'>
+          <label for='weight'>Enter your weight:</label>
+          <input type='text' id='weight' placeholder='Weight in kg' onChange={(e)=>setWeight(e.target.value)}></input>
+          <label for='weight'>Enter your Phone number:</label>
 
-     <div className='pair'> <h4>Enter the wait of waste :</h4>  <input type='text' className='input-text' placeholder='weight in kg' onChange={(e)=>{setWeight(e.target.value)}}/></div>
-     <div className='pair'> <h4>Enter your phone no :</h4>  <input type='text' className='input-text2' placeholder='phone number'/></div>
-     <div className='amt-wrap'>
-     <button className='payment-btn' onClick={findAmount}>see amount</button><h4 className='amt'>:  ₹ {amount}</h4>
-      </div>
-        <h4 className='pay-meth-hed'>Select payment method</h4>
-       
-       
-<div className='radio-wrap'>
+          <input placeholder='Phone number' ></input>
+        <button type='submit'  onClick={(e)=>findAmount(e)}> See Pyment Details</button>
+        </form>
+       { paymentmode&&<div className='payment'>
+          {amount&&<h4>Amount : {amount}</h4>}
+          <div className='radio-wrap'>
 
         <input type='radio' value="cash on pickup" name="paymentMethod" onChange={(e)=>setPayment(e.target.value)}/><h5>cash on pickup</h5>
         <input type='radio' value="online payment" name="paymentMethod" onChange={(e)=>setPayment(e.target.value)}/><h5>online payment</h5>
@@ -65,11 +67,8 @@ const Request = () => {
 <h4 className='card-enter'>Enter your debit card details :</h4><input type='text' className='card-num'></input></div>):null
         }
 </div>
-<button className='confirm-btn' onClick={handleSubmit}>confirm</button>
-
-        
-            </form>
-        </div>
+        </div>}
+       </div>
     </div>
   )
 }

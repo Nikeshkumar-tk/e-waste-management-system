@@ -38,7 +38,7 @@ console.log(userData)
     <div className='dashboard-wrap'>
         <div className='headings'>
             <h4 className={`c-requests`} onClick={fetchCompletedRequest}>Completed pickups</h4>
-            <span className='completedpickup-u-span'></span>
+            {/* <span className='completedpickup-u-span'></span> */}
             <h4 className='a-requests' onClick={fetchActiveRequests}>Active requests</h4>
         </div>
         <section className='details'>

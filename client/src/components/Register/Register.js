@@ -46,6 +46,18 @@ try{
             </form>
 
         </div>
+        <div className='login-btn-wrap'>
+
+
+        <h4>"when you put the whole thing together recycling is the best thing to do"</h4>
+        <button onClick={()=>window.location.replace('/login')}>Login</button>
+        </div>
+        <div className='explore-btn'>
+
+        {/* <img src="https://firebasestorage.googleapis.com/v0/b/miniprojectprofile.appspot.com/o/pngkit_waste-management-logo-png_2429852.png?alt=media&token=e89bbd65-ef46-4049-afb2-e3af4cd0f953"></img> */}
+      <button>Explore</button>
+       
+        </div>
     </div>
   )
 }

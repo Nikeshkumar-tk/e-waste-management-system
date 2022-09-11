@@ -31,37 +31,16 @@ console.log(user)
   return (
    
     <div className="main">
-        <div className="navbar">
-            <div className="icon">
-                <h2 className="logo">𝙿𝚒𝚌𝚔𝚄𝚙!
-                </h2>
-            </div>
-
-           
-           
+       <div className='login-form-wrap'>
+        <h3>PickUp Login</h3>
+        <input type='text' placeholder='Enter your Username' ref={userRef}></input>
+        <input type='password' placeholder='Enter your Password' ref={passwordRef}></input>
+        <button onClick={handleSubmit}>Login</button>
+       <div className='new-account'>
         
-        
-
-             
-
-                <div className="form">
-                
-                    <i className="fa-solid fa-users"></i>
-                
-                <form onSubmit={handleSubmit}>
-
-                    <input type="text" name="text" placeholder="Username" ref={userRef}/>
-                    <input type="password" name="password" placeholder=" 𝐏𝐚𝐬𝐬𝐰𝐨𝐫𝐝 " ref={passwordRef}/>
-                    <button className="btnn" type='submit'>𝗟𝗼𝗴 𝗜𝗻</button>
-                </form>
-
-                    <p className="link">𝗗𝗼𝗻'𝘁 𝗵𝗮𝘃𝗲 𝗮𝗻 𝗮𝗰𝗰𝗼𝘂𝗻𝘁 </p>
-                        <div className="sign">𝗦𝗶𝗴𝗻 𝘂𝗽</div>
-
-                    
-
-                </div>
-            </div>
+        <h5 >Don't have an account?</h5><h5 className='signup-btn' onClick={()=>window.location.replace("/register")}>SignUp</h5>
+        </div> 
+       </div>
         </div>
         
         

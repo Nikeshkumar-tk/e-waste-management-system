@@ -1,15 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Poppins:wght@200&display=swap');
+
 .register{
     height: 100vh;
     width: 100%;
-    background-color: #555;
+    background-color:azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/miniprojectprofile.appspot.com/o/pngkit_waste-management-logo-png_2429852.png?alt=media&token=e89bbd65-ef46-4049-afb2-e3af4cd0f953');
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position-x: 1130px;
+    background-position-y:80px;
+
+    
 }
 .register-inner{
     display: flex;
-    flex-direction: column;
-    position: absolute;
+    /* flex-direction: column; */
+    /* position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); */
+    /* background-color: green; */
+    height: 500px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 60px;
 }
 .input-text{
     margin-bottom: 10px;
@@ -22,10 +41,70 @@
     border-radius: 5px;
     border-width: 0px;
     font-size: 20px;
-    background-color: rgba(108, 209, 7, 0.838);
+    background-color:green;
     color: #fff;
     cursor: pointer;
+    font-family: Poppins;
 }
 ::placeholder{
 color: #555;
+}
+.register-inner form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* top: 100px; */
+}
+.register img{
+    height: 400px;
+    
+
+}
+.explore-btn{
+    /* background-color: green; */
+    width: 400px;
+    height: 500px;
+    /* padding-right: 100px; */
+   position: relative;
+   
+    
+}
+.explore-btn button{
+    position: absolute;
+    bottom: 130px;
+    height: 40px;
+    width: 170px;
+    border-radius: 5px;
+    background-color: green;
+    color: antiquewhite;
+    font-size: 20px;
+    right: 120px;
+    cursor: pointer;
+    font-family: Poppins;
+}
+.login-btn-wrap{
+    /* background-color: green; */
+    height: 500px;
+    width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.login-btn-wrap h4{
+font-size: 30px;
+margin-bottom: 60px;
+font-family: cursive;
+}
+.login-btn-wrap button{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #dbc1db;
+    border-width: 0px;
+    font-family: Poppins;
+    cursor: pointer;
+    font-weight:bold;
 }
