@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import './Home.css'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
@@ -8,14 +8,15 @@ const Home = () => {
     const [username,setUsername]=useState('')
     const [password,setPassword]=useState('')
     const [login,setLogin]=useState(false)
+    const feedbackRef = useRef()
     const {user}=useContext(Context)
-    const handleSubmit=async(e)=>{
+    const handlefeedBack=async(e)=>{
 e.preventDefault()
 try{
 
-    const res=await axios.post('/auth/login',{
-        username:username,
-        password:password
+    const res=await axios.post('/feedback',{
+       userid:user.userid,
+       desc:feedbackRef.current.value
     })
     console.log(res)
     res&&setLogin(true)
@@ -35,6 +36,16 @@ try{
         
         </div>
        </section>
+       <footer className='home-footer'>
+        <h1>Give your feedback</h1>
+      <textarea rows={6} cols={80} ref={feedbackRef}>
+
+    
+       </textarea>
+
+       <button className='feedback-btn' onClick={handlefeedBack}>Submit</button>
+
+       </footer>
                 
                 </div>
                

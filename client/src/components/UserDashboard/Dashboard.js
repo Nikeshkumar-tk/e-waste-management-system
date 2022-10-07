@@ -54,11 +54,9 @@ console.log(userData)
 <div className='detail-list'>
   <div className='wap-wrap'>
 
-    <h5 className='weight'>weight : {weight} kg</h5>
-    <h5 className='address'>Address : {homeaddress}</h5>
-   
-
-    <h5 className='payment'>Payment method : {payment}</h5>
+    <h5 >weight : {weight} kg</h5>
+    <h5 >Address : {homeaddress}</h5>
+    <h5 >Payment method : {payment}</h5>
   </div>
   <h4>Amount : ₹ {amount}</h4>
 <h4 className='pick-status'>Status : {picked?"Picked":"Not Picked"}</h4>

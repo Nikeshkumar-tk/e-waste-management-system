@@ -35,7 +35,7 @@ try{
             <form onSubmit={handleSubmit}>
 
 
-            <input type='text' className='input-text' placeholder='username' onChange={(e)=>setName(e.target.value)}/>
+            <input type='text' placeholder='username' onChange={(e)=>setName(e.target.value)}/>
             <input type='text' className='input-text' placeholder='email' onChange={(e)=>setEmail(e.target.value)}/>
             <input type='text' className='input-text' placeholder='phone number' onChange={(e)=>setPhoneno(e.target.value)}/>
             <input type='text' className='input-text' placeholder='homeaddress' onChange={(e)=>setHomeaddress(e.target.value)}/>

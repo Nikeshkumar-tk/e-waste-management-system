@@ -30,31 +30,57 @@ padding-right: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 580px;   
+    border: 1px solid gray;
+    position: relative;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     
-    /* background-color: red; */
 }
-.request-frm input{
-    margin-bottom: 5px;
-    margin-top: 5px;
-    height: 35px;
-    width: 200px;
-    border-width: 1px;
-    border-radius: 0px;
-   
-}
+
 .payment{
-    margin-right: 400px;
- /* background-color: green; */
+   
  width: 500px;
+ display: flex;
+ flex-direction: column;
+ gap: 90px;
+ padding-top: 30px;
  
 }
 /* see payment  */
 .request-inner button{
-    height: 35px;
+    /* height: 35px; */
     border-radius: 5px;
     border-width: 0px;
     background-color: green;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     cursor: pointer;
+  
     color: aliceblue;
+}
+
+.radio-wrap {
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.confirm-btn {
+    align-self: center;
+    height: 40px;
+   
+    width: 140px;
+}
+
+
+.input-data {
+
+    width: 200px;
+    height: 40px;
 }

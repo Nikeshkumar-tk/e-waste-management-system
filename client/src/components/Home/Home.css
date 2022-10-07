@@ -62,3 +62,29 @@
     color: aliceblue;
 
 }
+
+.home-footer {
+
+    height: 200px;
+    background-color: rgb(238, 231, 221);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home-footer ::-webkit-scrollbar {
+    display: none;
+}
+.feedback-btn {
+    height: 35px;
+    width: 150px;
+    border: none;
+    background-color: rgb(195, 96, 96);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.home-footer textarea {
+    border-radius: 10px;
+}
