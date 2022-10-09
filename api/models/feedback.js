@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const feedBackSchema = mongoose.Schema({
 
-    userid:{
+    username:{
         type:String,
     },
     desc:{

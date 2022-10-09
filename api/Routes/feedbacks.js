@@ -7,7 +7,7 @@ const Feedback = require('../models/feedback')
 router.post("/", async(req,res) => {
 
     const newFeedback = new Feedback({
-        userid:req.body.userid,
+        username:req.body.username,
         desc:req.body.desc,
     })
     const feedback = await newFeedback.save()

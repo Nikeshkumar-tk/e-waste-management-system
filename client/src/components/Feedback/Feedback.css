@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Inter+Tight:wght@900&family=Kanit:wght@900&family=Lato:wght@300&family=Poppins:wght@200&display=swap');
+
+.f-header{
+    background-color: skyblue;
+    height: 80px;
+    width: 100%;
+    
+    
+   
+}
+.f-title-wrap{
+    
+    height: 100%;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+.f-title-wrap h3{
+    margin: 0px;
+    font-family:'Lato','sans-serif';
+    font-size: 30px;
+}
+.feedback-main{
+    display: flex;
+    flex-flow: column;
+    
+
+}
+.feedback-wrap{
+display: flex;
+flex-flow: column wrap;
+height: 100px;
+gap: 20px;
+padding: 10px 20px;
+
+
+}
+.feedback-wrap h4{
+    font-family: 'Lato','sans-serif';
+    font-size: 20px;
+}

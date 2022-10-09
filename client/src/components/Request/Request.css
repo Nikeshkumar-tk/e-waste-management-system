@@ -1,86 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Combo&family=Poppins:wght@200&display=swap');
 
 
-.request-main{
-    height: 100vh;
-    background-color:azure;
-   
+.request-table {
+    border-collapse: collapse;
+    /* border: 1px solid #333; */
+    /* margin: 50px; */
+    width: 800px;
+    height: 450px;
 }
-/* heading */
-
-.request-main h3{
-    position: absolute;
-    left: 600px;
-    font-family: Poppins;
-}
-.request-inner{
-position: absolute;
-/* background-color: green; */
-height: 100vh;
-width: 100%;
-top: 180px;
-display: flex;
-/* padding: 60px; */
-padding-left: 200px;
-justify-content: space-between;
-padding-right: 50px;
-}
-/* form styles */
-.request-frm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 580px;   
-    border: 1px solid gray;
-    position: relative;
-    border-top: none;
-    border-left: none;
-    border-bottom: none;
-    height: 500px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.request-table thead {
+    /* padding: 5px; */
+    background-color: skyblue;
+    text-align: left;
+    height: 60px;
     
 }
-
-.payment{
-   
- width: 500px;
- display: flex;
- flex-direction: column;
- gap: 90px;
- padding-top: 30px;
- 
+.request-table thead th {
+    padding-left: 20px;
 }
-/* see payment  */
-.request-inner button{
-    /* height: 35px; */
+.request-table td,
+.request-tableth {
+    padding: 3px 2px;
+}
+.request-table tbody{
+    background-color: rgb(217, 232, 232);
+}
+
+.request-table tbody tr:first-child td {
+
+    padding-top: 10px;
+    /* background-color: green; */
+
+
+
+}
+.request-table tbody input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.request-table tbody div{
+    background-color: transparent;
+    width: 150px;
+    border-bottom: 1px solid #555;
+}
+.request-table tbody tr td{
+    padding-left: 20px;
+}
+.request-main{
+    display: flex;
+    align-items: center;
+    gap: 270px;
+    padding: 50px;
+}
+
+.payment-data{
+    height: 400px;
+    width: 700px;
+    background-color: azure;
+    border-left: 1px solid rgb(214, 206, 206);
+    padding-left: 100px;
+}
+.request-section{
+    height: 100vh;
+    background-color: azure;
+}
+.payment-data{
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+    position: relative;
+}
+.radio-wrap{
+    height: 90px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.payment-data button{
+    height: 35px;
+    width: 130px;
+    background-color: skyblue;
+    border: none;
     border-radius: 5px;
-    border-width: 0px;
-    background-color: green;
-    /* margin-top: 80px; */
-    cursor: pointer;
-  
-    color: aliceblue;
+    
 }
-
-.radio-wrap {
-
+.find-total{
+    height: 35px;
+    width: 130px;
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+}
+.payment-data form {
+    /* background-color: green; */
+    height: 400px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
-
-.confirm-btn {
-    align-self: center;
-    height: 40px;
-   
-    width: 140px;
-}
-
-
-.input-data {
-
-    width: 200px;
-    height: 40px;
 }

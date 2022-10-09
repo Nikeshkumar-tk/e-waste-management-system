@@ -18,6 +18,7 @@ import Adminlogin from './components/Adminlogin/Adminlogin';
 import SinglePadeDetails from './components/singlePageRequestDetails/SinglePadeDetails';
 import UserDetails from './components/UserDetailsAdminSide/UserDetails';
 import Payment from './components/Payment/Payment';
+import Feedback from './components/Feedback/Feedback';
 
 function App() {
   const {user}=useContext(Context)
@@ -47,7 +48,7 @@ console.log(adminUser)
      <Route path='/payment' element={<Payment />} />
      <Route path='/admin/dashboard' element={adminUser!=null?<Admin setAdminMode={setAdminMode} adminUser={adminUser}/>:<Adminlogin />}/>
      <Route path='/admin/dashboard/userdetails/:id' element={adminUser!=null?<UserDetails setAdminMode={setAdminMode} adminUser={adminUser}/>:<Adminlogin />}/>
-
+        <Route path='/admin/dashboard/feedback' element={<Feedback setAdminMode ={setAdminMode}/>}/>
      <Route path='/admin' element={<Adminlogin setAdminMode={setAdminMode} setAdminUser={setAdminUser} />}/>
      <Route path='/dashboard/requestdetails/:id' element={<SinglePadeDetails />}/>
       

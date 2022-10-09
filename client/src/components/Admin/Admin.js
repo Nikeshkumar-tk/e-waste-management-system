@@ -58,7 +58,7 @@ console.log(res.data)
                 
                 <li className='li-2' onClick={fetchData}>Requests</li>
                 <li className='li-3' onClick={pickedDetails}>Completed Requests</li>
-
+                <li className='li-1'><Link to='/admin/dashboard/feedback' className='link'>feedbacks</Link></li>
 
             </ul>
             <h5>Admin : {adminUser.username}</h5>

@@ -4,7 +4,7 @@ const Payment = () => {
     <>
     <div>
 
-<header>
+<header className='header'>
 	<div class="container">
 		<div class="left">
 			<h3>BILLING ADDRESS</h3>

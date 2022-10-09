@@ -15,7 +15,7 @@ e.preventDefault()
 try{
 
     const res=await axios.post('/feedback',{
-       userid:user.userid,
+       username:user.username,
        desc:feedbackRef.current.value
     })
     console.log(res)

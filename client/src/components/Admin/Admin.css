@@ -32,11 +32,7 @@
     bottom: 4px;
     text-decoration: none;
 }
-.li-1{
-    margin-right: 10px;
-    position: relative;
-    right: 100px;
-}
+
 .li-3{
     position: inherit;
     left: 110px;
@@ -111,4 +107,9 @@ margin: 1px;
     padding: 0px;
     margin: 0px;
   
+}
+.li-1{
+    /* margin-right: 10px; */
+    position: relative;
+    left:200px;
 }

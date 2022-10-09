@@ -4,11 +4,13 @@ import './SinglePageDetails.css'
 import axios from 'axios'
 
 const SinglePadeDetails = () => {
+
   const [userData,setUserData]=useState({})
   const location=useLocation()
   const path=location.pathname.split("/")[3]
+  
   useEffect(()=>{
-    // console.log(path)
+    
     fetchUserDetails()
   },[])
   const fetchUserDetails=async()=>{
@@ -22,27 +24,14 @@ setUserData(res.data)
   return (
     
     <div className='page-wrapper'>
-        {/* <div className='detail-wrapper'>
-            <div className='detail-inner'>
-
-
-            <h4>Username</h4>
-            <h4>Address</h4>
-            <h4>Phoneno</h4>
-            <h4>Location</h4>
-            <h4>Weight of waste</h4>
-            <h4>Amount</h4>
-            <h4>Payment method</h4>
-            </div>
-            <button>Close</button>
-
-            </div> */}
-            <table className='table1' border='2px'>
-                <tr>
+       
+            <table className='table1'>
+              {/* <p>User details</p> */}
+              <thead> <tr>
                     <th>Name</th>
                     <td>{userData.username}</td>
-                    </tr>
-                    <tr>
+                    </tr></thead> 
+                  <tbody>  <tr>
                     <th>Address</th>
                     <td>{userData.homeaddress}</td>
                     </tr>
@@ -62,15 +51,17 @@ setUserData(res.data)
                     <th>e-mail</th>
                     <td>{userData.email}</td>
                     </tr>
-                   <caption>User Details</caption>
+                    </tbody>
+                   
             </table>
-            <h4></h4>
-            <table className='table2' border='2px'>
-                <tr>
+          
+            <table className='table2'>
+         
+              <thead>  <tr>
                     <th>weight</th>
                     <td>{userData.weight}</td>
-                    </tr>
-                    <tr>
+                    </tr></thead>
+                 <tbody>   <tr>
                     <th>Amount</th>
                     <td> ₹ {userData.amount}</td>
                     </tr>
@@ -82,11 +73,13 @@ setUserData(res.data)
                     <th>Status</th>
                     <td>{userData.picked?"picked":"not Picked"}</td>
                     </tr>
-                    <caption>Pickup Details</caption>
-                   
+                    
+                    </tbody>
             </table>
+            <h3 className='success'> {userData.picked? "Picked succesfully":"Pickup booked successfully"}</h3>
             </div>
   )
 }
+
 
 export default SinglePadeDetails

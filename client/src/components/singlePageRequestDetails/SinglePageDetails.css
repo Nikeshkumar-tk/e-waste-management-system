@@ -1,49 +1,55 @@
 .page-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100vh;
-
-}
-.detail-wrapper{
-
-
-    background-color: green;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    width: 800px;
+    display: grid;
+    padding: 40px 20px;
     position: relative;
-    left: 350px;
-    top: 50px;
     
-}
-.detail-inner{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    /* align-items: center; */
-}
-.table1{
-    /* background-color: green; */
-    height: 400px;
-    width: 700px;
-    text-align: center;
-    /* border-width: 2px; */
-    /* border-style: solid; */
+   grid-template-columns: repeat(2, 1fr);
     
+
 }
-/* .table1 th{
-    border-width: 2px;
-    border-style: solid;
-    margin: 0px;
-    margin-right: 0px;
-    
+/* .table2 thead{
+    height: 50px;
+    background-color: skyblue;
 } */
-.table2{
-    height: 200px;
-    width: 700px;
+
+/* .table2 tr{
+   height: 120px;
+   background-color: skyblue;
+} */
+.table2 {
+    border-collapse:collapse;
+    background-color: azure;
+}
+
+
+.table1{
+
+position: relative;
+
+background-color: azure;
+border-radius: 20px;
+border-collapse: collapse;
+
+}
+
+.table1 thead{
+    height: 50px;
+    background-color: skyblue;
+}
+.table2 thead{
+height: 50px;
+background-color: skyblue;
+}
+.table1 tbody{
+height: 400px;
+}
+.table2 tbody{
+height: 400px;
+}
+
+.success{
+    align-self: center;
+    margin-top: 50px;
     text-align: center;
+    grid-column: 1 /span2;
 }
