@@ -3,7 +3,7 @@
 .homeMain{
     height: 100vh;
     width: 100%;
-   background-color:azure;
+   background-color:rgb(255, 255, 255);
 }
 .section-1{
     display: flex;
@@ -66,7 +66,7 @@
 .home-footer {
 
     height: 200px;
-    background-color: rgb(238, 231, 221);
+    background-color:#047aed;
     display: flex;
     padding: 10px;
     align-items: center;
@@ -79,12 +79,28 @@
 .feedback-btn {
     height: 35px;
     width: 150px;
-    border: none;
-    background-color: rgb(195, 96, 96);
+    border: 1px solid #fff;
+    background-color: transparent;
     border-radius: 5px;
     color: white;
     cursor: pointer;
 }
+.feedback-btn:hover{
+    transform: scale(0.98);
+}
 .home-footer textarea {
     border-radius: 10px;
+    padding: 10px 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+}
+.f-sucess{
+    font-family: Poppins;
+    color: #fff;
+}
+.home-footer h1{
+    color: #fff;
+    font-family: Poppins;
 }

@@ -8,6 +8,7 @@ const Home = () => {
     const [username,setUsername]=useState('')
     const [password,setPassword]=useState('')
     const [login,setLogin]=useState(false)
+    const [sendFeedback,setsendFeedback] = useState(false)
     const feedbackRef = useRef()
     const {user}=useContext(Context)
     const handlefeedBack=async(e)=>{
@@ -37,14 +38,14 @@ try{
         </div>
        </section>
        <footer className='home-footer'>
-        <h1>Give your feedback</h1>
+       {sendFeedback?<h2 className='f-sucess'>Feedback send successfully</h2>:<><h1>Give your feedback</h1>
       <textarea rows={6} cols={80} ref={feedbackRef}>
 
     
        </textarea>
 
-       <button className='feedback-btn' onClick={handlefeedBack}>Submit</button>
-
+       <button className='feedback-btn' onClick={() => {handlefeedBack()}} onMouseUp={()=>setsendFeedback(true)}>Submit</button>
+       </>}
        </footer>
                 
                 </div>
