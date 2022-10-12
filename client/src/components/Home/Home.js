@@ -21,6 +21,7 @@ try{
     })
     console.log(res)
     res&&setLogin(true)
+    res&&setsendFeedback(true)
 }catch(err){
     console.log(err)
 }
@@ -44,7 +45,7 @@ try{
     
        </textarea>
 
-       <button className='feedback-btn' onClick={() => {handlefeedBack()}} onMouseUp={()=>setsendFeedback(true)}>Submit</button>
+       <button className='feedback-btn' onClick={handlefeedBack} >Submit</button>
        </>}
        </footer>
                 
